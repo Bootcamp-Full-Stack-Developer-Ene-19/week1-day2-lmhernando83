@@ -11,50 +11,38 @@
 
     <div class="header">
 
-        <div class="menu">
-
-            <ul>
+            <ul class="menu">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Formación</a></li>
+                <li>
+                    <a href="#">Formación</a>
                     <ul>
-                        <li><a href="#">Angular 7 + Animations &ndash; <small>18 Ene 2019</small></a></li>
-                        <li><a href="#">Angular 7 Avanzado &ndash; <small>Próximamente</small></a></li>
-                        <li><a href="#">Dockers + kubernetes &ndash; <small>Próximamente</small></a></li>
-                        <li><a href="#">NodeJs &ndash; <small>Próximamente</small></a></li>
-                        <li><a href="#">CSS + Sass Avanzado &ndash; <small>Próximamente</small></a></li>
-                        <li><a href="#">VueJS 2 &ndash; <small>Próximamente</small></a></li>
+                            <li><a href="#">Angular 7 + Animations &ndash; <small>18 Ene 2019</small></a></li>
+                            <li><a href="#">Angular 7 Avanzado &ndash; <small>Próximamente</small></a></li>
+                            <li><a href="#">Dockers + kubernetes &ndash; <small>Próximamente</small></a></li>
+                            <li><a href="#">NodeJs &ndash; <small>Próximamente</small></a></li>
+                            <li><a href="#">CSS + Sass Avanzado &ndash; <small>Próximamente</small></a></li>
+                            <li><a href="#">VueJS 2 &ndash; <small>Próximamente</small></a></li>
                     </ul>
+                </li>
                 <li><a href="#">Referencia</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
 
-        </div><!-- //Menu-->
+            <form action="" method="" class="buscador">
 
-        <div class="buscador">
-
-            <form action="" method="">
-
-                <div>
-                    <label for="buscador">Buscar en Campus</label>
-                    <input type="text" name="buscador" autocomplete="off">
-                </div>
-
-                <div>
-                    <button type="submit">Buscar</button>
-                </div>
-
+                <label for="buscador">Buscar en Campus</label>
+                <input type="text" id="buscador" autocomplete="off" list="lista">
+                <button type="submit">Buscar</button>
 
             </form>
 
-        </div><!-- //Buscador-->
-
     </div><!-- //Header-->
 
-    <div class="seccion1">
+    <div class="intro">
 
-        <div class="seccion1-inner">
+        <div class="intro-inner">
 
             <h1>¡Hola a Todos!</h1>
     
@@ -62,13 +50,13 @@
     
             <a href="#">Más información</a>
 
-        </div><!-- //Seccion1-Inner-->
+        </div><!-- //Intro-Inner-->
 
-    </div><!-- //Seccion1-->
+    </div><!-- //Intro-->
 
-    <div class="cursos">
+    <div class="container">
 
-        <div class="curso1">
+        <div class="col">
 
             <h2>Angular 7 + Animations</h2>
     
@@ -78,7 +66,7 @@
 
         </div>
 
-        <div class="curso2">
+        <div class="col">
 
             <h2>Docker + Kubernetes</h2>
     
@@ -88,7 +76,7 @@
 
         </div>
 
-        <div class="curso3">
+        <div class="col">
 
             <h2>NodeJS</h2>
     
@@ -99,38 +87,42 @@
         </div>
 
 
-    </div><!-- //Cursos-->
+    </div><!-- //Intro-->
 
-    <div class="video-contedor">
+    <div class="spot">
 
-        <div class="video">
+        <div class="container">
 
-            <img src="images/video.png" alt="Video de los alumnos en nuestros diferentes cursos">
+            <div class="col">
+    
+                <img src="images/video.png" alt="Video de los alumnos en nuestros diferentes cursos">
+    
+            </div>
+    
+            <div class="col">
+    
+                <h3>Próximas convocatorias</h3>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae.</p>
+    
+                <form action="" method="" class="registro">
+    
+                    <div>
+                        <label for="email"></label>
+                        <input type="text" id="email" placeholder="Introduce un email válido">
+                    </div>
+    
+                    <div>
+                        <button type="submit">Me apunto!</button>
+                    </div>
+    
+                </form>
+    
+            </div>
 
         </div>
 
-        <div class="convocatorias">
-
-            <h3>Próximas convocatorias</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae.</p>
-
-            <form action="" method="">
-
-                <div>
-                    <label for="email"></label>
-                    <input type="text" id="email" placeholder="Introduce un email válido">
-                </div>
-
-                <div>
-                    <button type="submit">Me apunto!</button>
-                </div>
-
-            </form>
-
-        </div><!-- //Convocatorias-->
-
-    </div><!-- //Video-Contenedor-->
+    </div><!-- //Spot-->
 
     <div class="servicios">
 
@@ -141,27 +133,19 @@
         <a href="#">Lorem ipsum</a>
 
     </div><!-- //Servicios-->
-
+    
     <div class="footer">
-        <hr>
-        <div class="footer-menu">
+    
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sercicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Formación</a></li>
+            <li><a href="#">Referencia</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
 
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sercicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Formación</a></li>
-                <li><a href="#">Referencia</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-
-        </div>
-
-        <div class="copy">
-
-            <p>&copy; Company 2018</p>
-
-        </div>
+        <p class="copy">&copy; Company 2018</p>
 
     </div>
     
